@@ -3,7 +3,7 @@ import { create } from "zustand";
 import { axiosInstance } from "../lib/axios";
 
 const BASE_URL =
-  import.meta.env.MODE === "development" ? "http://localhost:5000" : "/";
+  import.meta.env.MODE === "development" ? "https://book-store-backend-weoc.onrender.com" : "/";
 
 export const userAuthStore = create((set, get) => ({
   authUser: null,
